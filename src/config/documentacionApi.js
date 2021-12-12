@@ -9,7 +9,7 @@ const swaggerSpec = {
         },
         servers: [
             {
-                url:"http://localhost:7000"
+                url:"https://eco-back.herokuapp.com/"
             }
         ]
     },
