@@ -21,7 +21,7 @@ controller.getById = (req, res) => {
     const { id } = req.params;
     schemaProducts
             .findById(id)
-            .then((data) => res.json({data:data}))
+            .then((data) => res.json(data))
             .catch(error => res.json({message: error}))
 }
 
