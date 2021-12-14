@@ -167,8 +167,7 @@ module.exports = documents;
  *                  application/json:
  *                      schema:
  *                          type: objet
- *                          items:
- *                              $ref: '#/components/schemas/products'
+ *                          $ref: '#/components/schemas/products'
  *          404:
  *              description: Product not found
  */
