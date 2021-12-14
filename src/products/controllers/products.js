@@ -27,9 +27,9 @@ controller.getById = (req, res) => {
 
 controller.updateProduct = (req, res) => {
     const { id } = req.params;
-    const { nombre, categoria, sabor, precio, estado } = req.body;
+    const { nombre, categoria, sabor, precio } = req.body;
     schemaProducts
-            .updateOne({_id: id}, {$set:{ nombre, categoria, sabor, precio, estado }})
+            .updateOne({_id: id}, {$set:{ nombre, categoria, sabor, precio }})
             .then((data) =>  res.json(data))
             .catch((error) =>  res.json({message: error}))
 }
