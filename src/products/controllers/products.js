@@ -25,7 +25,7 @@ controller.getById = (req, res) => {
             .catch(error => res.json({message: error}))
 }
 
-controller.updateProduct = (req, res) => {
+controller.updateProductById = (req, res) => {
     const { id } = req.params;
     const { nombre, categoria, sabor, precio } = req.body;
     schemaProducts

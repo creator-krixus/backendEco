@@ -17,7 +17,7 @@ router.get('/', controller.getAllProducts)
 router.get('/:id', controller.getById)
 
 //Actualizar producto
-router.put('/:id', controller.updateProduct)
+router.put('/:id', controller.updateProductById)
 
 //Borrado logico mediante actualizacion de estado
 router.patch('/:id', controller.updateProduct)
